@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'harbor.biz.com/public/maven:3.6.3-jdk-11-openj9'
+            image 'harbor.biz.com/public/maven-custom:3.6.3-jdk-11-openj9'
             args '-v /root/.m2:/root/.m2'
         }
     }
